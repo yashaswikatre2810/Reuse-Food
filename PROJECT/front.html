@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD RESCUE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        *{padding: 0; margin: 0; box-sizing: border-box;}
+        header{
+            width: 100%;
+            height: 100vh;
+            background-image: url("img 08.jpg");
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+        .menu a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid white;
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+            width: 100%;
+        }
+        .login a{
+            text-decoration: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 20px;
+            background: indianred; 
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .login a:hover{
+            background: transparent;
+            border: 1px solid black;
+        }
+        .h-txt{
+            max-width: 50em;
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            transform: translate(-50%,-50%);
+            text-align: left;
+            color: white;
+        }
+        .h-txt span{
+            letter-spacing: 5px;
+        }
+        .h-txt h1{
+            font-size: 5em;
+        }
+        .h-txt a{
+            text-decoration:none;
+            background: indianred;
+            color: white;
+            padding: 10px 10px;
+            letter-spacing: 3px;
+            transition: all;
+            
+        }
+        .h-txt a{
+            background: indianred;
+            border: 1px solid indianred;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <marquee bgcolor="lightgray">Waste Less, Save More, Live More! &nbsp;|&nbsp; Donate Leftover Food To Those In Need! &nbsp;|&nbsp; Stop Starvation, Stop Food Waste!</marquee>
+    <header>
+        <nav>
+            <div class="logo">
+                <h5><b>FoodRescue</b></h5>
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="https://www.nofoodwaste.org/donate">Donations</a>
+                <a href="home.html">Services</a>
+                <a href="#">About Us</a>
+                <a href="FAQS.html">FAQ</a>
+                <a href="#">Contact</a>
+            </div>
+                <div class="login">
+                    <a href="login.html">LOGIN</a>
+                </div>
+                
+            
+        </nav>
+        <section class="h-txt">
+            <h2>You have the power to change the world
+                <br> Start by preserving food.</h2>
+
+            <br>
+            <a href="login.html"><b>Register Now</b></a>
+        </section>
+    </header>
+    <section class="footer">
+        <div class="box-container">
+           <div class="box">
+              <a href="#"> </i>facebook </a>
+           </div>
+           <div class="box">
+              <a href="#"></i>twitter </a>
+           </div>
+     
+           <div class="box">
+              <a href="#"> </i>linkedin </a>
+           </div>
+     
+           <div class="box">
+              <a href="#"> </i>instagram </a>
+           </div>
+        </div>
+        <div class="credit"> created by <span>&copy;Bug Crawlers</span> | all rights reserved! </div>
+        <div class="box-xontainer"></div>
+     
+        </div>
+     </section>
+     
+</body>
+</html>

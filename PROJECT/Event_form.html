@@ -1,0 +1,85 @@
+<script>
+    function validate_form(){
+    let  event_name=document.forms["event_form"]["name"].value;
+    let  event_area=document.forms["event_form"]["area"].value;
+    let  event_city=document.forms["event_form"]["city"].value;
+    let  event_desc=document.forms["event_form"]["desc"].value;
+     if(event_name==""){
+        alert("Name must be filled out");
+        return false;
+     }   
+     if(event_city==""){
+        alert("City must be filled out");
+        return false;
+     }     
+     if(event_area==""){
+        alert("Area must be filled out");
+        return false;
+     }    
+     if(event_desc=""){
+        
+            alert("Description must be filled out");
+            return false;        
+         
+     }
+     return true;
+}
+</script>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>Event Form</title>
+        <style>           
+            h1 {
+                color: rgb(233, 210, 210);
+                font: optional;
+            }
+        </style>    
+         <link rel="stylesheet" href="style_event_form.css">
+         <script>
+            href="event_form_script.js"
+        </script>
+  </head>
+
+  <body style="background-color:rgb(233, 233, 35);">
+    <form name="event_form" onsubmit="return validate_form()" method="post">  
+    <div class="wrapper"> 
+        
+        <div class="modalform">
+            <h2 style="font-family:Poppins;color: orange;"><b><i>Event Form</i></b></h2>
+               
+                <div class="inputgroup">                    
+                    <input type="text" placeholder="Name" name="name" id="name" >
+                </div>              
+                <div class="inputgroup">                 
+                    <input type="text" placeholder="Area" name="area" id="area" >
+                </div>
+                <div class="inputgroup">                   
+                    <input type="text" placeholder="City" name="city" id="city">
+                </div>              
+                <div class="inputgroup">                    
+                    <input type="datetime-local" placeholder="Date and Time" name="date" id="date" >
+                </div>                
+                <div class="inputgroup">                  
+                    <textarea class="form-control" placeholder="Description" rows="3" name="desc" id="desc"></textarea>
+                </div>   
+
+                <!-- <div class="inputgroup">
+                    <label for="Choose logo of the event:" class="text-primary"  >Choose image</label>                  
+                    <input type="file" id="Choose image" name="choose_image" id="choose_image" accept="image/png, image/jpeg">        
+                </div> -->
+                <br>              
+                <button type="submit" class="submitBtn">Submit</button>          
+           
+        </div>
+    </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

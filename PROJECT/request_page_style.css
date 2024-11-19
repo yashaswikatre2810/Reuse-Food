@@ -1,0 +1,29 @@
+
+ .header{
+
+    position: sticky;
+    top:0; left:0; right:0 ;
+    z-index: 1000;
+    background-color:rgb(247, 240, 253);
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom:1rem;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    justify-content: space-between;
+ 
+ }
+ section{
+    padding:5rem 10%;
+ }
+ .header .navbar a{
+   font-size: 2rem;
+   margin-left: 2rem;
+   color:var(--black);
+   box-shadow: 0.5em;
+
+}
+
+.header .navbar a:hover{
+   color:var(--main-color);
+}

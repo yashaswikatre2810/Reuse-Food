@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100vw;
+    height: 110vh;
+    background-color:rgb(235, 230, 247);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalForm{
+    width: 550px;
+    height: 680px;
+    min-height: 80vh;
+    background-color: rgb(73, 229, 78);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.text{
+    margin-left: 3em;
+    color: blue;
+}
+
+.actionBtns{
+    width: 80%;
+    background-color: rgb(22, 22, 21);
+    margin: 0.7em;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+.actionBtn{
+    padding: 1em;
+    width: 50%;
+    outline: none;
+    border: black;
+    background-color: transparent;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+}
+.moveBtn{
+    position: absolute;
+    width: 50%;
+    height: 90%;
+    margin: 2px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background-color: #fff;
+    font-size: 0.8em;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transform: translateX(0);
+    transition: all 0.2s ease-in-out;
+}
+
+.rightBtn{
+    transform: translateX(98%);
+    transition: all 0.2s ease-in-out;
+}
+.inputgroup{
+    width: 400px;
+    height: 56px;
+    margin: 0.8em 0;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 700px) {
+    .inputgroup {
+      width: 100%;
+      height: 55px;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .inputgroup {
+      height: 60px;
+    }
+  }
+.inputgroup input{
+    width: 100%;
+    padding: 1em 1.5em;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+}
+.inputgroup input:hover{
+    outline: none;
+    background-color: rgb(243, 207, 137);
+    transition: all 0.3s ease-in-out;
+}
+.submitBtn{
+    width: 150px;
+    padding: 1em;
+    margin: 2em 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #f8ba10cf;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+.submitBtn:hover{
+    
+    background-color: rgb(8, 0, 255);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    display: none;
+}
+.rfform{
+    display: block;
+}
+.lofform{
+    display: block;
+}

@@ -1,0 +1,151 @@
+<script>
+
+function validate_form(){
+    let  event_name=document.form.name.value;
+    let  event_area=document.form.area.value;
+    let  event_city=document.form.city.value;
+    let  event_desc=document.form.quantity.value;
+
+     if(event_name==""){
+        alert("Name must be filled out");
+        return false;
+     }   
+     if(event_city==""){
+        alert("City must be filled out");
+        return false;
+     }     
+     if(event_area==""){
+        alert("Area must be filled out");
+        return false;
+     }    
+     if(event_desc=""){
+            alert("Quantity must be filled out");
+            return false;        
+     }
+     return true;
+}
+
+
+
+function validate_form1(){
+    let  event_name1=document.form1.name1.value;
+    let  event_area1=document.form1.area1.value;
+    let  event_city1=document.form1.city1.value;
+    let  event_desc1=document.form1.quantity1.value;
+
+     if(event_name1==""){
+        alert("Name must be filled out");
+        return false;
+     }   
+     if(event_city1==""){
+        alert("City must be filled out");
+        return false;
+     }     
+     if(event_area1==""){
+        alert("Area must be filled out");
+        return false;
+     }    
+     if(event_desc1=""){
+            alert("Qunatity must be filled out");
+            return false;        
+     }
+     return true;
+}
+
+</script>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Food Donation Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   
+    <div class="wrapper">
+
+        <div class="modalForm">
+            <div class="actionBtns">
+                <button class="actionBtn Rawfood">Raw Food</button>
+                <button class="actionBtn Leftoverfood">Left over food</button>
+                <button class="moveBtn">Raw Food</button>
+            </div>
+
+            <div class="userform">
+                
+                <form name="form" class="form rf rfform" onsubmit="return validate_form()">
+
+                    <div class="inputgroup">                        
+                        <input type="text" placeholder="Name" name = "name" id="name" >
+                    </div>
+                    <div class="inputgroup">                        
+                        <input type="text" placeholder="City" name = "city" id="city" >
+                    </div>
+                    <div class="inputgroup">                        
+                        <input type="text" placeholder="Area" name = "area"  id="area">
+                    </div>
+                    
+                    <div class="inputgroup">                        
+                        <input type="number" placeholder="Quantity" name = "quantity" id="quantity">
+                    </div>
+<!-- 
+                    <div class="inputgroup">
+                        <label for="Choose logo of the event:" class="text-primary"  >Choose image</label>                  
+                        <input type="file" id="Choose image" name="choose_image" id="choose_image" accept="image/png, image/jpeg">        
+                    </div> -->
+                    
+                    <div class="inputgroup">
+                       
+                    
+                        <input type="text" id="desc" name="Describe " accept="image/png, image/jpeg " , placeholder="Description">        
+                    
+                    </div>
+                    <div class="inputgroup">                        
+                        <input type="datetime-local" placeholder="Cooked at" required >
+                    </div>
+                    <button type="submit" class="submitBtn">Submit RF</button>
+                    <button type="submit" class="submitBtn">Return Home</button>
+                   
+
+                </form>
+                
+
+                <form name = "form1" class="form lof " onsubmit="return validate_form1()">
+                    <div class="inputgroup">                        
+                        <input type="text" placeholder="Name" name = "name1" id="name1" required>
+                    </div>
+                    <div class="inputgroup">                        
+                        <input type="text" placeholder="City" name = "city1" id="city1"  required>
+                    </div>
+                    <div class="inputgroup">                        
+                        <input type="text" placeholder="Area" name = "area1"  id="area1" required>
+                    </div>
+                    <div class="inputgroup">                        
+                        <input type="number" placeholder="Serving number" required >
+                    </div>  
+                    <div class="inputgroup">                        
+                        <input type="text" placeholder="Discription">
+                    </div>                    
+                    <div class="inputgroup">                        
+                        <input type="datetime-local" placeholder="Cooked at" required >
+                    </div>
+            
+                    <button type="submit" class="submitBtn" >Submit LOF</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
